@@ -1,0 +1,147 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="robots" content="noindex" />
+    <meta
+      name="description"
+      content="This is an example of a meta description. This will often show up in search results."
+    />
+    <meta name="keywords" content="HTML,CSS,JavaScript" />
+    <meta name="author" content="Mariusz K" />
+    <title>Fixed-Fluid-Fixed template</title>
+    <link
+      href="https://fonts.googleapis.com/css?family=PT+Sans+Narrow"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" type="text/css" href="./assets/css/styles.css" />
+  </head>
+  <body>
+    <article>
+      <div id="maincontainer">
+        <div id="topsection">
+          <div class="innertube">
+            <div class="logo">LOGO</div>
+            <div class="login">
+              <button class="button button-black">LogIn</button>
+            </div>
+          </div>
+        </div>
+        <div id="contentwrapper">
+          <div id="contentcolumn">
+            <div class="innertube">
+              <p>
+                <strong>
+                  Hurry up and avail our 20% discount offer ends soon! Scroll
+                  down to see date!
+                </strong>
+              </p>
+              <p>
+                Nunc sit amet tellus ut nulla auctor consectetur in nec lectus.
+                Maecenas maximus leo in volutpat aliquam. In a tortor et nisi
+                lobortis faucibus accumsan vitae urna.
+              </p>
+              <form class="myForm">
+                <p>
+                  <label
+                    >Name <input type="text" name="customer_name" required />
+                  </label>
+                </p>
+                <fieldset>
+                  <legend>Which idem do you require?</legend>
+                  <p>
+                    <label class="choice">
+                      <input type="radio" name="radioItem" required value="1" />
+                      Item 1
+                    </label>
+                  </p>
+                  <p>
+                    <label class="choice">
+                      <input type="radio" name="radioItem" required value="2" />
+                      Item 2
+                    </label>
+                  </p>
+                </fieldset>
+                <fieldset>
+                  <legend>Extras</legend>
+                  <p>
+                    <label class="choice">
+                      <input type="checkbox" name="extras" value="1" /> Extras
+                      #1
+                    </label>
+                  </p>
+                  <p>
+                    <label class="choice">
+                      <input type="checkbox" name="extras" value="2" /> Extras
+                      #2
+                    </label>
+                  </p>
+                </fieldset>
+                <p>
+                  <label
+                    >Select your favourite
+                    <input
+                      type="text"
+                      name="favourite"
+                      required
+                      list="favourite"
+                    />
+                  </label>
+                  <datalist id="favourite">
+                    <option value="Reading"> </option>
+                    <option value="Fishing"> </option>
+                    <option value="Gardening"> </option>
+                  </datalist>
+                </p>
+                <p><button class="button button-black">Submit</button></p>
+              </form>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident.
+              </p>
+              <p>
+                At vero eos et accusamus et iusto odio dignissimos ducimus qui
+                blanditiis praesentium voluptatum deleniti atque corrupti quos
+                dolores et quas molestias excepturi sint occaecati cupiditate
+                non provident, similique sunt in culpa qui officia deserunt
+                mollitia animi, id est laborum et dolorum fuga. Et harum quidem
+                rerum facilis est et expedita distinctio. Nam libero tempore,
+                cum soluta nobis est eligendi optio cumque nihil impedit quo
+                minus id quod maxime placeat facere possimus, omnis voluptas
+                assumenda est, omnis dolor repellendus. Temporibus autem
+                quibusdam et aut officiis.
+              </p>
+              <p class="offer">
+                This special offer ends in: <span id="days"></span> days,
+                <span id="hours"></span> hours,
+                <span id="minutes"></span> minutes and
+                <span id="seconds"></span> seconds.
+              </p>
+            </div>
+          </div>
+        </div>
+        <div id="leftcolumn">
+          <div class="innertube"><p>left</p></div>
+        </div>
+        <div id="rightcolumn"><div class="innertube">right</div></div>
+      </div>
+      <footer>
+        <p>
+          &copy; MK, Contact information:
+          <a href="mailto:someone@example.com?subject=This page is great !!!">
+            someone@example.com</a
+          >.
+        </p>
+      </footer>
+    </article>
+    <script src="assets/js/countdown.js"></script>
+    <script
+      src="https://code.jquery.com/jquery-2.2.4.min.js"
+      integrity="sha256-BbhdlvQf/xTY9gja0Dq3HiwQF8LaCRTXxZKRutelT44="
+      crossorigin="anonymous"
+    ></script>
+  </body>
+</html>

@@ -1,0 +1,173 @@
+body {
+  margin: 0;
+  padding: 0;
+  line-height: 1.5em;
+  flex-direction: column;
+  font-family: "PT Sans Narrow", sans-serif;
+}
+#topsection {
+  background: lightgrey;
+  height: 255px;
+}
+.logo {
+  float: left;
+  font-size: 30px;
+  padding: 25px;
+  font-style: italic;
+  font-weight: 600;
+  text-shadow: 2px 2px blanchedalmond;
+}
+.login {
+  float: right;
+  padding: 25px;
+}
+.button {
+  background-color: #4caf50;
+  border: none;
+  color: white;
+  padding: 16px 32px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  -webkit-transition-duration: 0.4s; /* Safari */
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button-black {
+  background-color: white;
+  color: black;
+  border: 2px solid #555555;
+}
+.button-black:hover {
+  background-color: #555555;
+  color: white;
+}
+#contentwrapper {
+  float: left;
+  width: 100%;
+  flex: 1;
+}
+#contentcolumn {
+  margin: 0 150px 0 150px;
+}
+#leftcolumn {
+  float: left;
+  width: 150px;
+  margin-left: -100%;
+  background: lightgrey;
+  min-height: 200px;
+  text-align: center;
+}
+#rightcolumn {
+  float: left;
+  width: 150px;
+  margin-left: -150px;
+  background: lightgrey;
+  height: 200px;
+  text-align: center;
+}
+footer {
+  clear: left;
+  width: 100%;
+  background: lightgrey;
+  color: #fff;
+  text-align: center;
+  padding: 0px;
+  position: fixed;
+  bottom: 0;
+  left: 0;
+  height: 10%;
+}
+#footer a {
+  color: white;
+}
+.innertube {
+  margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
+  margin-top: 0;
+  padding-bottom: 50px;
+  clear: both;
+}
+a:link {
+  text-decoration: underline;
+  color: #ffffff;
+}
+a:visited {
+  text-decoration: underline;
+  color: #ffffff;
+}
+a:hover {
+  text-decoration: underline;
+  color: #ffffff;
+}
+.offer {
+  text-shadow: 0 1px 0 #ccc, 0 2px 0 #c9c9c9, 0 3px 0 #bbb, 0 4px 0 #b9b9b9,
+    0 5px 0 #aaa, 0 6px 1px rgba(0, 0, 0, 0.1), 0 0 5px rgba(0, 0, 0, 0.1),
+    0 1px 3px rgba(0, 0, 0, 0.3), 0 3px 5px rgba(0, 0, 0, 0.2),
+    0 5px 10px rgba(0, 0, 0, 0.25), 0 10px 10px rgba(0, 0, 0, 0.2),
+    0 20px 20px rgba(0, 0, 0, 0.15);
+}
+.myForm {
+  font-size: 0.8em;
+  width: 90%;
+  padding: 1em;
+  border: 1px solid #ccc;
+  margin: 0 auto;
+}
+.myForm * {
+  box-sizing: border-box;
+}
+.myForm fieldset {
+  border: none;
+  padding: 0;
+}
+.myForm legend,
+.myForm label {
+  padding: 0;
+  font-weight: bold;
+}
+.myForm label.choice {
+  font-size: 0.9em;
+  font-weight: normal;
+}
+.myForm input[type="text"],
+.myForm select,
+.myForm textarea {
+  display: block;
+  width: 100%;
+  border: 1px solid #ccc;
+  font-family: "Lucida Sans Unicode", "Lucida Grande", sans-serif;
+  font-size: 0.9em;
+  padding: 0.3em;
+}
+.myForm textarea {
+  height: 100px;
+}
+@media (max-width: 840px) {
+  /* drop right column down */
+  #leftcolumn {
+    margin-left: -100%;
+  }
+  #rightcolumn {
+    float: none;
+    width: 100%;
+    margin-left: 0;
+    clear: both;
+  }
+  #contentcolumn {
+    margin-right: 0;
+  }
+}
+@media (max-width: 600px) {
+  /* drop left column down */
+  #leftcolumn {
+    float: none;
+    width: 100%;
+    clear: both;
+    margin-left: 0;
+  }
+  #contentcolumn {
+    margin-left: 0;
+  }
+}
