@@ -86,7 +86,7 @@ footer {
 .innertube {
   margin: 10px; /*Margins for inner DIV inside each column (to provide padding)*/
   margin-top: 0;
-  padding-bottom: 50px;
+  padding-bottom: 120px;
   clear: both;
 }
 a:link {
